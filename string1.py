@@ -17,8 +17,11 @@
 # and donuts(23) returns 'Number of donuts: many'
 
 def donuts(count):
-    # +++your code here+++
-    return
+    if count >= 10:
+        return "number of donuts: many"
+    else:
+        return f"number of donuts: {count}"
+
 
 
 # B. both_ends
@@ -28,9 +31,11 @@ def donuts(count):
 # is less than 2, return instead the empty string.
 
 def both_ends(s):
-    # +++your code here+++
-    return
-
+    if len(s) < 2:
+        return ''
+    else:
+        return s[:2] + s[-2:]
+  
 
 # C. fix_start
 # Given a string s, return a string
